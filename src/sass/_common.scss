@@ -1,43 +1,51 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
-    --green-logo: #28a745;
-    --main-white: #ffffff;
-    --hero-white: #e9e9e9;
-    --black-color-text: #333333;
-    --main-bg-color: #f4f4f4;
-    --btn-second-bg-color: #28a745;
-    --blue-bg-color: #0284d0;
-    --footer-bg-color: #333333;
-    --background-color-modal: rgba(0, 0, 0, 0.2);
+  --green-logo: #28a745;
+  --main-white: #ffffff;
+  --hero-white: #e9e9e9;
+  --black-color-text: #333333;
+  --main-bg-color: #f4f4f4;
+  --btn-second-bg-color: #28a745;
+  --blue-bg-color: #0284d0;
+  --footer-bg-color: #333333;
+  --background-color-modal: rgba(0, 0, 0, 0.2);
 }
 
 body {
-    background-color: var(--main-bg-color);
-    color: var(--black-color-text);
+  background-color: var(--main-bg-color);
+  color: var(--black-color-text);
 
-    font-weight: 400;
+  font-weight: 400;
 
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body.modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.link {
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.list {
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 320px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1360px) {
     width: 1360px;
-    padding-left: 15px;
-    padding-right: 15px;
+  }
 }
 
 h1,
@@ -48,8 +56,8 @@ h5,
 h6,
 p,
 ul {
-    padding: 0;
-    margin: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
